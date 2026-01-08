@@ -32,7 +32,11 @@ const createTweet = async (req, res) => {
 
 const getTweetTimeline = async (req, res) => {
   try {
-    const tweets = await Tweet.find()
+    const currentUser = await User.findById(req.user.id);
+    const followingList = currentUser.following;
+    followingList.push(req.user.id);
+
+    const tweets = await Tweet.find({ author: { $in: followingList } })
       .populate("author", "name email")
       .sort({ createdAt: -1 });
 
