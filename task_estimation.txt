@@ -6,9 +6,10 @@ Twitter Clone - Task Breakdown & Estimation
    - Setup React Frontend
    - Define Folder Structure
 
-2. Backend Development (5 Hours - 21 Minutes)
+2. Backend Development (5 Hours - 41 Minutes)
    - Database Schema Design (User, Tweet Model) - 30 Minutes
    - Authentication API (Register, Login with JWT) - 2 Hours
    - Tweets API (Create, Delete, Get User Tweets) - 1.5 Hours
    - Added the Like and Unlike Functionality - 45 Minutes
    - Added the Follow and Unfollow Functionality - 36 Minutes
+   - Updated the Tweet Timeline Functionality - 20 Minutes
