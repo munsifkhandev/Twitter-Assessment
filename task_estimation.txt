@@ -5,3 +5,7 @@ Twitter Clone - Task Breakdown & Estimation
    - Setup Express Backend
    - Setup React Frontend
    - Define Folder Structure
+
+   2. Backend Development (2.5 Hours)
+   - Database Schema Design (User, Tweet mod) - 30 Minutes
+   - Authentication API (Register, Login with JWT) - 2 Hours
