@@ -1,11 +1,12 @@
 Twitter Clone - Task Breakdown & Estimation
 
- 1. Project Setup & Configuration (30 Minutes)
+1. Project Setup & Configuration (30 Minutes)
    - Initialize Git Repository
    - Setup Express Backend
    - Setup React Frontend
    - Define Folder Structure
 
-   2. Backend Development (2.5 Hours)
-   - Database Schema Design (User, Tweet mod) - 30 Minutes
+2. Backend Development (4 Hours)
+   - Database Schema Design (User, Tweet Model) - 30 Minutes
    - Authentication API (Register, Login with JWT) - 2 Hours
+   - Tweets API (Create, Delete, Get User Tweets) - 1.5 Hours
