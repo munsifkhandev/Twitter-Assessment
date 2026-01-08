@@ -78,8 +78,49 @@ const deleteTweet = async (req, res) => {
   }
 };
 
+const reactionFunctionality = async (req, res) => {
+  try {
+    const tweetId = req.params.id;
+    const userId = req.user.id;
+
+    const tweet = await Tweet.findById(tweetId);
+    if (!tweet) {
+      return res.status(404).json({
+        success: false,
+        message: "Tweet not found..",
+      });
+    }
+
+    if (tweet.likes.includes(userId)) {
+      tweet.likes = tweet.likes.filter((id) => id.toString() !== userId);
+      await tweet.save();
+
+      return res.status(200).json({
+        success: true,
+        message: "Tweet Unliked successfully..",
+        data: tweet,
+      });
+    } else {
+      tweet.likes.push(userId);
+      await tweet.save();
+
+      return res.status(200).json({
+        success: true,
+        message: "Tweet Liked successfully..",
+        data: tweet,
+      });
+    }
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Error in liking/unliking tweet..",
+    });
+  }
+};
+
 module.exports = {
   createTweet,
   getTweetTimeline,
   deleteTweet,
+  reactionFunctionality,
 };
