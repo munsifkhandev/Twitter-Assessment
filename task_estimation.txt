@@ -1,0 +1,7 @@
+Twitter Clone - Task Breakdown & Estimation
+
+ 1. Project Setup & Configuration (30 Minutes)
+   - Initialize Git Repository
+   - Setup Express Backend
+   - Setup React Frontend
+   - Define Folder Structure
