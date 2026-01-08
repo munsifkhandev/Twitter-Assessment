@@ -5,6 +5,8 @@ const connectDB = require("./config/db");
 
 const authRoutes = require("./routes/authRoutes");
 const tweetRoutes = require("./routes/tweetRoutes");
+const userRoutes = require("./routes/userRoutes");
+
 dotenv.config();
 
 const app = express();
@@ -16,6 +18,7 @@ connectDB();
 
 app.use("/api/auth", authRoutes);
 app.use("/api/tweets", tweetRoutes);
+app.use("/api/users", userRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello, World!, This is my Twitter Assessment Server.");
