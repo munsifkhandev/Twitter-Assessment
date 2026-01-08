@@ -4,6 +4,7 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 
 const authRoutes = require("./routes/authRoutes");
+const tweetRoutes = require("./routes/tweetRoutes");
 dotenv.config();
 
 const app = express();
@@ -14,6 +15,7 @@ app.use(cors());
 connectDB();
 
 app.use("/api/auth", authRoutes);
+app.use("/api/tweets", tweetRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello, World!, This is my Twitter Assessment Server.");
