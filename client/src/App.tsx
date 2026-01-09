@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -9,7 +10,7 @@ function App() {
   return (
     <>
       <Toaster />
-
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
