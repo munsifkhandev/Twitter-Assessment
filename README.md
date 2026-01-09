@@ -67,42 +67,62 @@ cd twitter-clone
 
 Navigate to the server folder and install dependencies.
 
+```bash
+
 cd server
 npm install
+```
 
 Create a .env file in the server directory and add the following:
+
+```bash
 
 PORT= Enter your Port Number
 MONGO_URL= Enter your Connection String
 JWT_SECRET= Enter your Secret Key
+```
 
 Start the server:
+
+```bash
+
 npm run dev
+```
 
 ### 3. Frontend Setup
 
 Open a new terminal, navigate to the client folder, and install dependencies.
 
+```bash
+
 cd client
 npm install
+```
 
 Start the React app:
+
+```bash
+
 npm run dev
+
+```
 
 ### 4. Open in Browser
 
 Visit http://localhost:5173 in your browser.
 
-Method          ,Endpoint,              Description
-POST,           /api/auth/register,     Register a new user
-POST,           /api/auth/login,        Login user & get Token
-GET,            /api/tweets,            Get all tweets (Pagination support)
-POST,           /api/tweets,            Create a new tweet
-DELETE,         /api/tweets/:id,        Delete a tweet
-PUT,            /api/tweets/:id/like,   Like/Unlike a tweet
-GET,            /api/users/:id,         Get user profile info
-PUT,            /api/users/:id/follow,  Follow/Unfollow a user
+## 🔌 API Endpoints
 
+| Method   | Endpoint                | Description                         |
+| :------- | :---------------------- | :---------------------------------- |
+| `POST`   | `/api/auth/register`    | Register a new user                 |
+| `POST`   | `/api/auth/login`       | Login user & get Token              |
+| `GET`    | `/api/tweets`           | Get all tweets (Pagination support) |
+| `POST`   | `/api/tweets`           | Create a new tweet                  |
+| `DELETE` | `/api/tweets/:id`       | Delete a tweet                      |
+| `PUT`    | `/api/tweets/:id/like`  | Like/Unlike a tweet                 |
+| `GET`    | `/api/users/:id`        | Get user profile info               |
+| `PUT`    | `/api/users/:id/follow` | Follow/Unfollow a user              |
 
 ## Author
 
