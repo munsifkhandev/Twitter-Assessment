@@ -122,9 +122,30 @@ const reactionFunctionality = async (req, res) => {
   }
 };
 
+const getAllTweets = async (req, res) => {
+  try {
+    const { userId, page = 1 } = req.query;
+
+    const limit = 10;
+    const skip = (parseInt(page) - 1) * limit;
+
+    const filter = userId ? { author: userId } : {};
+
+    const tweets = await Tweet.find(filter)
+      .populate("author", "name email followers")
+      .sort({ createdAt: -1 })
+      .skip(skip)
+      .limit(limit);
+
+    res.status(200).json({ success: true, data: tweets });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
 module.exports = {
   createTweet,
   getTweetTimeline,
   deleteTweet,
   reactionFunctionality,
+  getAllTweets,
 };

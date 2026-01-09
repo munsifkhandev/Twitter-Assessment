@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { FaTwitter } from "react-icons/fa";
+import { FaTwitter, FaUserCircle } from "react-icons/fa";
 import { toast } from "react-hot-toast";
 
 const Navbar = () => {
@@ -24,12 +24,17 @@ const Navbar = () => {
 
                 <div className="flex gap-4 items-center">
                     {isAuth ? (
-                        <button
-                            onClick={handleLogout}
-                            className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-full font-bold transition"
-                        >
-                            Logout
-                        </button>
+                        <>
+                            <Link to="/profile" title="My Profile" className="text-gray-600 hover:text-blue-500 text-3xl transition">
+                                <FaUserCircle />
+                            </Link>
+                            <button
+                                onClick={handleLogout}
+                                className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-full font-bold transition"
+                            >
+                                Logout
+                            </button>
+                        </>
                     ) : (
                         <>
                             <Link
