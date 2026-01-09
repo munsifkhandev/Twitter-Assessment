@@ -21,3 +21,9 @@ Twitter Clone - Task Breakdown & Estimation
    - User Profile Pages (Own profile & Other user profiles) - 3 Hours
    - Everything Working Completely Fine as of now.
 
+4. Final Documentation and Polish ( 30 Minutes )
+   - README Documentation
+   - Final Testing & Bug Fixes
+
+
+Total Development Time: ~16 Hours (approximately).
