@@ -19,6 +19,5 @@ Twitter Clone - Task Breakdown & Estimation
    - Timeline/Home Page (Feed display, Pagination, Like feature) - 3 Hours
    - Create Tweet Feature (UI + API Integration) - 1 Hour
    - User Profile Pages (Own profile & Other user profiles) - 3 Hours
-
-
+   - Everything Working Completely Fine as of now.
 
