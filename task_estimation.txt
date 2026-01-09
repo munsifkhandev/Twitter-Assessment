@@ -14,4 +14,6 @@ Twitter Clone - Task Breakdown & Estimation
    - Added the Follow and Unfollow Functionality - 36 Minutes
    - Updated the Tweet Timeline Functionality - 20 Minutes
 
-3. Frontend Development ( Starting Development )
+3. Frontend Development ( 2 Hours  )
+   - Authentication Pages (Login, Register Forms) - 2 Hours
+
