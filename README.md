@@ -127,4 +127,3 @@ Visit http://localhost:5173 in your browser.
 ## Author
 
 Munsif Khan
-Twitter Assessment Task
